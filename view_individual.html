@@ -1,0 +1,92 @@
+<!DOCTYPOE html>
+<html lang= "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>View the complaints</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="view_individual_styling.css" rel="stylesheet">
+        <style>
+            #deviceSize{
+                margin-bottom: 30px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="header">
+                <div id="pghead">
+                    Virtual Police Station
+                </div>
+                <div id="searchbox">
+                    <form method="get">
+                        <input id="search" type="text">
+                        <input id="submit" type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+         <!-- create nv bar-->
+        <nav role="navigation"class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    
+                    <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Citizen corner</a></li>
+                        <li><a href="#">Police Corner</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div id="complaint">
+                <p>hello</p>
+            </div>
+        </div>
+        <form>
+            <input type="button" id="print" class="btn btn-warning" value="Print" onclick="window.print()"/>
+            <button type="submit" id="verify" class="btn btn-warning">Verified</button>
+            <button type="submit" id="register" class="btn btn-warning">Register</button>
+            <button type="submit" id="case_close" class="btn btn-warning">Case-closed</button>
+        </form>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <script>
+            $(function(){
+                var status="seen";
+                $("#verify").click(function(){
+                    window.alert("Are you sure you want to proceed?");
+                    status="verified";
+                });
+                $("#register").click(function(){
+                    window.alert("Are you sure you want to proceed?");
+                    status="registered";
+                });
+                $("#case_close").click(function(){
+                    window.alert("Are you sure you want to proceed?");
+                    status="case_closed";
+                });
+            });
+        </script>
+    </body>
+</html>

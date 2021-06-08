@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Report a Missing person</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="report_styling.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+    
+<div class="testbox">
+      <form action="/">
+        <h1>Missing Person Complain</h1>
+        <p>Please send us details about the incident you would like to report. Our Complaint Center will analyze your complaint and take the appropriate measures in order that the reported situation will be inspected and brought to justice.</p>
+        <hr/>
+        
+    <div class="item">
+          <p>Date of complaint</p>
+          <input type="date" name="name" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        
+    <div class="item">
+          <p>Name of complainant</p>
+          <input type="text" name="name" placeholder="First" />
+          <input type="text" name="name" placeholder="Last" />
+        </div>
+        
+    <div class="item">
+          <p>Complainant's Email</p>
+          <input type="text" placeholder="Email" name="name"/>
+        </div>
+        
+    
+    <div class="item address">
+          <p>Address</p>
+          <div class="street">
+            <input class="street-item" type="text" name="name" placeholder="Street address" />
+            <input  class="street-item" type="text" name="name" placeholder="Street addres line 2" />
+            <input type="text" name="name" placeholder="City" />
+            <input type="text" name="name" placeholder="District" />
+            <input type="text" name="name" placeholder="Postal / zip code" />
+            <input type="text" name="name" placeholder="State" />
+          </div>
+        
+          </div>
+          <div class="item">
+          <p>Name of Missing Person</p>
+          <input type="text" name="name" placeholder="First" />
+          <input type="text" name="name" placeholder="Last" />
+        </div>
+        
+    <div class="item">
+          <p>Age</p>
+          <input type="text" placeholder="Age" name="age"/>
+        </div>
+          <div class="gender">
+              <p>Gender</p>
+              
+              <div id="g">
+                  <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>
+              </div>
+              
+          </div>
+          
+    <div class="item">
+          <p>Missing since?</p>
+          <input type="date" name="name" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+          
+    <div class="item">
+          <p>Time </p>
+          <input type="time" name="name" required/>
+          <i class="fas fa-clock"></i>
+        </div>
+        
+    <div class="item location">
+          <p>Last seen place</p>
+          <input type="text" name="name" placeholder="Exact spot eg: outside shop x"/>
+        </div>
+          
+    <div class="item">
+          <p>The person(s) involved in this complaint are(*only if you are sure or else you will be sued for malice prosecution)</p>
+          <textarea rows="5" placeholder="Mention Victims/Accused separately here"></textarea>
+        </div>
+        
+  <div class="item complaint-details">
+          <p>Details of missing person</p>
+          <div class="complaint-details-item">
+            <textarea rows="5" placeholder="Note all relevant dates, places, events, etc. pertaining to the missing person,dress,height,color"></textarea>
+          </div>
+        </div>   
+        
+   <!-- <div class="item desired-outcome">
+          <p>Desired outcome</p>
+          <div class="desired-outcome-item">
+            <textarea rows="5" placeholder="Actions to be taken"></textarea>
+          </div>
+        </div>  -->
+          
+    <div class="item">
+          <p>Witness(es), if available:</p>
+          <textarea rows="5" placeholder="Name - Mobile No. (*email*)"></textarea>
+        </div>
+          
+    <div class="item">
+          <p>Additional comment(s):</p>
+          <textarea rows="5"></textarea>
+        </div>
+        
+    <h4>Your signatures</h4>
+        
+        <small>By signing you declare that all information you have entered is truthful and accurate.</small>
+        <div class="btn-block">
+          <button type="submit" href="/">Register Complaint</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

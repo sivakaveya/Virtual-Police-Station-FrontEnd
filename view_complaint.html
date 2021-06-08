@@ -1,0 +1,126 @@
+<!DOCTYPOE html>
+<html lang= "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>View the complaints</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="view_complaint_styling.css" rel="stylesheet">
+        <style>
+            #deviceSize{
+                margin-bottom: 30px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="header">
+                <div id="pghead">
+                    Virtual Police Station
+                </div>
+                <div id="searchbox">
+                    <form method="get">
+                        <input id="search" type="text">
+                        <input id="submit" type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+         <!-- create nv bar-->
+        <nav role="navigation"class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    
+                    <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Citizen corner</a></li>
+                        <li><a href="#">Police Corner</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+        <div class="container-fluid">
+            <ul class="nav nav-tabs nav-justified" id="navigation">
+                <li role="presentation"><a href="#unseen_complaints" data-toggle="tab"><span class="glyphicon glyphicon-envelope"></span> Unseen Complaints<span class="badge">3</span></a></li>
+                <li role="presentation"><a href="#seen_complaints" data-toggle="tab"><span class="glyphicon glyphicon-folder-open"></span> Seen Complaints </a></li>
+                <li role="presentation"><a href="#filed_complaints" data-toggle="tab"><span class="glyphicon glyphicon-book"></span> Registered Complains </a></li>
+                <li role="presentation"><a href="#closed_files" data-toggle="tab"><span class="glyphicon glyphicon-briefcase"></span> Case closed down details</a></li>
+            </ul>
+            
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane active fade in" id="unseen_complaints">
+                    <p>Home Content</p>
+                    <button type="submit" class="btn btn-warning">Hi</button>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+                
+              
+                <div class="tab-pane fade" id="seen_complaints">
+                    <p>Messages Content</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+                
+                <div class="tab-pane fade" id="filed_complaints">
+                    <p>Notification Content</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+                
+                <div class="tab-pane fade" id="closed_files">
+                    <p>Contact-us Content</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <script>
+        </script>
+    </body>
+</html>
